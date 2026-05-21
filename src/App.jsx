@@ -1,5 +1,5 @@
 import React from "react";
-import { Shield, Globe2, PackageCheck, Network, Crosshair, Factory, FileCheck2, ArrowRight, Mail, MapPin, LockKeyhole, Truck, Layers3 } from "lucide-react";
+import { Shield, Globe2, PackageCheck, Network, Crosshair, Factory, FileCheck2, ArrowRight, Mail, MapPin, LockKeyhole, Truck, Layers3, Phone } from "lucide-react";
 import { motion } from "framer-motion";
 
 const heroDefenseImage = new URL('/images/hero-defense.jpg', import.meta.url).href;
@@ -293,7 +293,11 @@ export default function JHBDefenseGroupWebsite() {
                 Contact JHB Defense Group for production partnerships, tender support, technical sourcing, agency-specific equipment programmes or turnkey supply solutions.
               </p>
               <div className="space-y-4 text-[#4C4A40]">
+                <div>
+                  JHB Defense is part of VDS Capital LTD, headquartered in Braga, Portugal, operating internationally in the fields of defense, protection systems, and strategic solutions.
+                </div>
                 <div className="flex items-center gap-3"><Mail className="w-5 h-5" /> contact@jhbdefensegroup.com</div>
+                <div className="flex items-center gap-3"><Phone className="w-5 h-5" /> +351 910 197 087</div>
                 <div className="flex items-center gap-3"><MapPin className="w-5 h-5" /> Europe-based · International supply network</div>
               </div>
             </div>

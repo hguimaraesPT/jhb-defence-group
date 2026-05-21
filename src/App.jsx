@@ -52,8 +52,7 @@ function JHBLogo({ compact = false }) {
           <div className="font-black tracking-[0.16em] text-3xl md:text-4xl text-[#F4F1E8] drop-shadow-sm">JHB</div>
           <div className="font-extrabold tracking-[0.18em] text-sm md:text-lg text-[#6F7648] uppercase mt-2">Defense Group</div>
           <div className="h-px w-full bg-[#C3A36B] mt-2 mb-2 opacity-70" />
-          <div className="text-[10px] md:text-xs text-[#C9C2B4] uppercase tracking-[0.34em]">Integrated Supply Solutions</div>
-        </div>
+          <div className="text-[10px] md:text-xs text-[#C9C2B4] uppercase tracking-[0.34em]">Integrated Supply Solutions</div>          <div className="text-[10px] md:text-xs text-[#9A9D8A] uppercase tracking-[0.34em] mt-1">Part of VDS Capital LTD</div>        </div>
       )}
     </div>
   );

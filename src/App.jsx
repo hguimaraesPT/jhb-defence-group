@@ -1,8 +1,9 @@
 import React from "react";
-import { Shield, Globe2, PackageCheck, Network, Crosshair, Factory, FileCheck2, ArrowRight, Mail, MapPin, LockKeyhole, Truck, Layers3, Phone } from "lucide-react";
+import { Shield, Globe2, PackageCheck, Network, Crosshair, Factory, FileCheck2, ArrowRight, Mail, MapPin, LockKeyhole, Truck, Layers3 } from "lucide-react";
 import { motion } from "framer-motion";
 
 const heroDefenseImage = new URL('/images/hero-defense.jpg', import.meta.url).href;
+const heroVideo = '/images/hero-video.mp4';
 const tacticalEquipmentImage = new URL('/images/tactical-equipment.jpg', import.meta.url).href;
 const productionNetworkImage = new URL('/images/production-network.jpg', import.meta.url).href;
 const ppeSupplyImage = new URL('/images/ppe-supply.jpg', import.meta.url).href;
@@ -158,10 +159,15 @@ export default function JHBDefenseGroupWebsite() {
             <motion.div initial={{ opacity: 0, scale: 0.96 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, delay: 0.1 }} className="relative">
               <div className="absolute -inset-4 bg-[#C3A36B]/10 blur-3xl rounded-[3rem]" />
               <div className="relative rounded-[2rem] border border-[#2D3328] bg-[#223029]/82 p-6 shadow-2xl">
-                <img
-                  src={heroDefenseImage}
-                  alt="Military defense supply and tactical equipment"
-                  className="w-full h-[420px] rounded-[1.75rem] object-cover border border-[#2D3328]"
+                <video
+                  src={heroVideo}
+                  poster={heroDefenseImage}
+                  className="w-full h-[420px] rounded-[1.75rem] object-cover border border-[#2D3328] bg-[#000]"
+                  controls
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
                 />
                 <div className="grid grid-cols-2 gap-4 mt-6">
                   {[
@@ -300,7 +306,6 @@ export default function JHBDefenseGroupWebsite() {
                   <Mail className="w-5 h-5" />
                   <a href="mailto:contact@jhbdefensegroup.com" className="text-[#0B3A0F] underline hover:text-[#134A14]">contact@jhbdefensegroup.com</a>
                 </div>
-                <div className="flex items-center gap-3"><Phone className="w-5 h-5" /> +351 910 197 087</div>
                 <div className="flex items-center gap-3"><MapPin className="w-5 h-5" /> Europe-based · International supply network</div>
               </div>
             </div>

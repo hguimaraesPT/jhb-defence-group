@@ -7,6 +7,7 @@ const tacticalEquipmentImage = new URL('/images/tactical-equipment.jpg', import.
 const productionNetworkImage = new URL('/images/production-network.jpg', import.meta.url).href;
 const ppeSupplyImage = new URL('/images/ppe-supply.jpg', import.meta.url).href;
 const technicalWorkwearImage = new URL('/images/technical-workwear.jpg', import.meta.url).href;
+const contactImage = new URL('/images/contact.jpg', import.meta.url).href;
 
 function JHBLogo({ compact = false }) {
   return (
@@ -296,9 +297,17 @@ export default function JHBDefenseGroupWebsite() {
                 <div>
                   JHB Defense is part of VDS Capital LTD, headquartered in Braga, Portugal, operating internationally in the fields of defense, protection systems, and strategic solutions.
                 </div>
-                <div className="flex items-center gap-3"><Mail className="w-5 h-5" /> contact@jhbdefensegroup.com</div>
+                <div className="flex items-center gap-3">
+                  <Mail className="w-5 h-5" />
+                  <a href="mailto:contact@jhbdefensegroup.com" className="text-[#0B3A0F] underline hover:text-[#134A14]">contact@jhbdefensegroup.com</a>
+                </div>
                 <div className="flex items-center gap-3"><Phone className="w-5 h-5" /> +351 910 197 087</div>
                 <div className="flex items-center gap-3"><MapPin className="w-5 h-5" /> Europe-based · International supply network</div>
+              </div>
+            </div>
+            <div className="rounded-[2rem] border border-[#C9C2B4] bg-[#F4F1E8] p-6 shadow-xl shadow-[#0000001a]">
+              <div className="rounded-[1.75rem] overflow-hidden border border-[#B7AD99] bg-[#E8E2D3]">
+                <img src={contactImage} alt="Contact JHB Defense Group" className="w-full h-full object-cover min-h-[320px]" />
               </div>
             </div>
           </div>

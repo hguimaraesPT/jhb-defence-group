@@ -301,15 +301,6 @@ export default function JHBDefenseGroupWebsite() {
                 <div className="flex items-center gap-3"><MapPin className="w-5 h-5" /> Europe-based · International supply network</div>
               </div>
             </div>
-            <form className="rounded-[1.5rem] bg-[#F4F1E8] p-6 space-y-4 border border-[#C9C2B4]">
-              <input className="w-full rounded-xl border border-[#B7AD99] bg-white px-4 py-3 outline-none focus:border-[#6F7648]" placeholder="Name" />
-              <input className="w-full rounded-xl border border-[#B7AD99] bg-white px-4 py-3 outline-none focus:border-[#6F7648]" placeholder="Company" />
-              <input className="w-full rounded-xl border border-[#B7AD99] bg-white px-4 py-3 outline-none focus:border-[#6F7648]" placeholder="Email" />
-              <textarea className="w-full rounded-xl border border-[#B7AD99] bg-white px-4 py-3 outline-none focus:border-[#6F7648] min-h-[130px]" placeholder="Tell us about your requirement" />
-              <a href="mailto:contact@jhbdefensegroup.com" className="inline-flex w-full justify-center rounded-full bg-[#1D2B20] text-[#F4F1E8] px-6 py-4 font-bold hover:bg-[#2A3B2E] transition">
-                Send Enquiry
-              </a>
-            </form>
           </div>
         </section>
       </main>

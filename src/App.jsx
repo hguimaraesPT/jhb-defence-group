@@ -2,7 +2,7 @@ import React from "react";
 import { Shield, Globe2, PackageCheck, Network, Crosshair, Factory, FileCheck2, ArrowRight, Mail, MapPin, LockKeyhole, Truck, Layers3 } from "lucide-react";
 import { motion } from "framer-motion";
 
-const heroDefenceImage = new URL('/images/hero-defence.jpg', import.meta.url).href;
+const heroDefenseImage = new URL('/images/hero-defense.jpg', import.meta.url).href;
 const tacticalEquipmentImage = new URL('/images/tactical-equipment.jpg', import.meta.url).href;
 const productionNetworkImage = new URL('/images/production-network.jpg', import.meta.url).href;
 const ppeSupplyImage = new URL('/images/ppe-supply.jpg', import.meta.url).href;
@@ -17,7 +17,7 @@ function JHBLogo({ compact = false }) {
         viewBox="0 0 140 140"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        aria-label="JHB Defence Group logo"
+        aria-label="JHB Defense Group logo"
         className="shrink-0 drop-shadow-xl"
       >
         <defs>
@@ -49,7 +49,7 @@ function JHBLogo({ compact = false }) {
       {!compact && (
         <div className="leading-none">
           <div className="font-black tracking-[0.16em] text-3xl md:text-4xl text-[#F4F1E8] drop-shadow-sm">JHB</div>
-          <div className="font-extrabold tracking-[0.18em] text-sm md:text-lg text-[#6F7648] uppercase mt-2">Defence Group</div>
+          <div className="font-extrabold tracking-[0.18em] text-sm md:text-lg text-[#6F7648] uppercase mt-2">Defense Group</div>
           <div className="h-px w-full bg-[#C3A36B] mt-2 mb-2 opacity-70" />
           <div className="text-[10px] md:text-xs text-[#C9C2B4] uppercase tracking-[0.34em]">Integrated Supply Solutions</div>
         </div>
@@ -58,21 +58,21 @@ function JHBLogo({ compact = false }) {
   );
 }
 
-export default function JHBDefenceGroupWebsite() {
+export default function JHBDefenseGroupWebsite() {
   const capabilities = [
     {
       icon: <Shield className="w-7 h-7" />,
-      title: "Defence & Security Equipment",
+      title: "Defense & Security Equipment",
       text: "Integrated sourcing and supply of military, police and security equipment through a trusted network of specialised manufacturing partners.",
       image: tacticalEquipmentImage,
-      imageAlt: "Tactical equipment and defence gear"
+      imageAlt: "Tactical equipment and defense gear"
     },
     {
       icon: <Factory className="w-7 h-7" />,
       title: "Multi-Partner Production Network",
       text: "Access to qualified manufacturers across technical textiles, tactical apparel, PPE, accessories, ballistic-related components and operational gear.",
       image: productionNetworkImage,
-      imageAlt: "Integrated production network for defence supply"
+      imageAlt: "Integrated production network for defense supply"
     },
     {
       icon: <PackageCheck className="w-7 h-7" />,
@@ -86,7 +86,7 @@ export default function JHBDefenceGroupWebsite() {
       title: "Tender & Procurement Support",
       text: "Support for public tenders, framework agreements, technical specifications, sample development and compliance-driven supply programmes.",
       image: technicalWorkwearImage,
-      imageAlt: "Technical workwear for defence and security operations"
+      imageAlt: "Technical workwear for defense and security operations"
     }
   ];
 
@@ -98,7 +98,7 @@ export default function JHBDefenceGroupWebsite() {
     "Private Security Operators",
     "Industrial & Critical Infrastructure",
     "Emergency Response Units",
-    "Defence Contractors"
+    "Defense Contractors"
   ];
 
   const productAreas = [
@@ -135,13 +135,13 @@ export default function JHBDefenceGroupWebsite() {
           <div className="max-w-7xl mx-auto px-6 py-24 md:py-32 relative grid lg:grid-cols-2 gap-14 items-center">
             <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
               <div className="inline-flex items-center gap-2 rounded-full border border-[#3F4736] px-4 py-2 text-sm text-[#D5CDBF] mb-8 bg-[#233428]/70">
-                <LockKeyhole className="w-4 h-4 text-[#C3A36B]" /> Defence · Security · Technical Supply
+                <LockKeyhole className="w-4 h-4 text-[#C3A36B]" /> Defense · Security · Technical Supply
               </div>
               <h1 className="text-5xl md:text-7xl font-black tracking-tight leading-[0.95] mb-8 text-[#F4F1E8]">
-                Turnkey supply solutions for defence, security and operational environments.
+                Turnkey supply solutions for defense, security and operational environments.
               </h1>
               <p className="text-lg md:text-xl text-[#D5CDBF] leading-relaxed max-w-2xl mb-10">
-                JHB Defence Group is an international supply and integration platform connecting public and private clients with specialised production partners for technical workwear, tactical equipment, PPE and mission-ready solutions.
+                JHB Defense Group is an international supply and integration platform connecting public and private clients with specialised production partners for technical workwear, tactical equipment, PPE and mission-ready solutions.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a href="#capabilities" className="inline-flex justify-center items-center gap-2 rounded-full bg-[#C3A36B] text-[#0D0F0D] px-7 py-4 font-bold hover:bg-[#D8CCB8] transition shadow-lg shadow-black/20">
@@ -157,8 +157,8 @@ export default function JHBDefenceGroupWebsite() {
               <div className="absolute -inset-4 bg-[#C3A36B]/10 blur-3xl rounded-[3rem]" />
               <div className="relative rounded-[2rem] border border-[#2D3328] bg-[#223029]/82 p-6 shadow-2xl">
                 <img
-                  src={heroDefenceImage}
-                  alt="Military defence supply and tactical equipment"
+                  src={heroDefenseImage}
+                  alt="Military defense supply and tactical equipment"
                   className="w-full h-[420px] rounded-[1.75rem] object-cover border border-[#2D3328]"
                 />
                 <div className="grid grid-cols-2 gap-4 mt-6">
@@ -191,7 +191,7 @@ export default function JHBDefenceGroupWebsite() {
             </div>
             <div className="lg:col-span-2 text-lg text-[#D5CDBF] leading-relaxed space-y-5">
               <p>
-                JHB Defence Group was created to deliver complete, reliable and scalable supply solutions for organisations operating in demanding environments. Our model is based on a curated network of production partners, technical manufacturers and specialist suppliers, enabling us to build tailored supply programmes around each client’s operational, technical and procurement requirements.
+                JHB Defense Group was created to deliver complete, reliable and scalable supply solutions for organisations operating in demanding environments. Our model is based on a curated network of production partners, technical manufacturers and specialist suppliers, enabling us to build tailored supply programmes around each client’s operational, technical and procurement requirements.
               </p>
               <p>
                 Whether supporting confirmed production orders, tender-stage samples, framework supply agreements or agency-specific equipment kits, we coordinate the full process with a clear focus on quality, responsiveness, confidentiality and long-term reliability.
@@ -204,7 +204,7 @@ export default function JHBDefenceGroupWebsite() {
           <div className="max-w-3xl mb-14">
             <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-5 text-[#F4F1E8]">Core capabilities</h2>
             <p className="text-[#A8A090] text-lg leading-relaxed">
-              A flexible operating model designed for complex supply needs across defence, police, protection and industrial technical equipment.
+              A flexible operating model designed for complex supply needs across defense, police, protection and industrial technical equipment.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -259,7 +259,7 @@ export default function JHBDefenceGroupWebsite() {
             <div>
               <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-6 text-[#F4F1E8]">Sectors we serve</h2>
               <p className="text-[#A8A090] text-lg leading-relaxed">
-                JHB Defence Group supports organisations where equipment reliability, compliance and delivery discipline are critical to operational readiness.
+                JHB Defense Group supports organisations where equipment reliability, compliance and delivery discipline are critical to operational readiness.
               </p>
             </div>
             <div className="grid sm:grid-cols-2 gap-4">
@@ -277,7 +277,7 @@ export default function JHBDefenceGroupWebsite() {
             <div className="max-w-4xl">
               <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-6 text-[#F4F1E8]">Confidentiality, discretion and operational trust.</h2>
               <p className="text-[#D5CDBF] text-lg leading-relaxed">
-                We understand that defence and security supply projects often involve sensitive specifications, restricted requirements, agency-specific configurations and strict commercial confidentiality. Our project approach is designed to support NDA-based discussions, controlled information exchange and disciplined partner coordination.
+                We understand that defense and security supply projects often involve sensitive specifications, restricted requirements, agency-specific configurations and strict commercial confidentiality. Our project approach is designed to support NDA-based discussions, controlled information exchange and disciplined partner coordination.
               </p>
             </div>
           </div>
@@ -288,10 +288,10 @@ export default function JHBDefenceGroupWebsite() {
             <div>
               <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-6">Let’s discuss your supply requirements.</h2>
               <p className="text-[#4C4A40] text-lg leading-relaxed mb-8">
-                Contact JHB Defence Group for production partnerships, tender support, technical sourcing, agency-specific equipment programmes or turnkey supply solutions.
+                Contact JHB Defense Group for production partnerships, tender support, technical sourcing, agency-specific equipment programmes or turnkey supply solutions.
               </p>
               <div className="space-y-4 text-[#4C4A40]">
-                <div className="flex items-center gap-3"><Mail className="w-5 h-5" /> contact@jhbdefencegroup.com</div>
+                <div className="flex items-center gap-3"><Mail className="w-5 h-5" /> contact@jhbdefensegroup.com</div>
                 <div className="flex items-center gap-3"><MapPin className="w-5 h-5" /> Europe-based · International supply network</div>
               </div>
             </div>
@@ -310,8 +310,8 @@ export default function JHBDefenceGroupWebsite() {
 
       <footer className="border-t border-[#2D3328]">
         <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between gap-4 text-sm text-[#827B6E]">
-          <div>© 2026 JHB Defence Group. All rights reserved.</div>
-          <div>Defence · Security · Technical Workwear · PPE · Operational Equipment</div>
+          <div>© 2026 JHB Defense Group. All rights reserved.</div>
+          <div>Defense · Security · Technical Workwear · PPE · Operational Equipment</div>
         </div>
       </footer>
     </div>

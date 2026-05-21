@@ -112,6 +112,8 @@ export default function JHBDefenseGroupWebsite() {
     "Custom kits and agency-specific solutions"
   ];
 
+  const currentYear = new Date().getFullYear();
+
   return (
     <div className="min-h-screen bg-[#182318] text-[#F7F2E8] font-sans selection:bg-[#C3A36B] selection:text-[#0D0F0D]">
       <header className="sticky top-0 z-50 backdrop-blur-xl bg-[#25372B]/90 border-b border-[#4B5A43]">
@@ -309,8 +311,13 @@ export default function JHBDefenseGroupWebsite() {
       </main>
 
       <footer className="border-t border-[#2D3328]">
-        <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between gap-4 text-sm text-[#827B6E]">
-          <div>© 2026 JHB Defense Group. All rights reserved.</div>
+        <div className="max-w-7xl mx-auto px-6 py-8 grid gap-4 text-sm text-[#827B6E]">
+          <div>
+            © {currentYear} JHB Defense Group. All rights reserved.
+          </div>
+          <div>
+            JHB Defense is part of VDS Capital LTD, headquartered in Braga, Portugal, operating internationally in the fields of defense, protection systems, and strategic solutions.
+          </div>
           <div>Defense · Security · Technical Workwear · PPE · Operational Equipment</div>
         </div>
       </footer>
